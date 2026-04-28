@@ -1,19 +1,70 @@
-body {font-size: larger; color: red;}
-nav {
-    border-bottom: 1px solid black;
-   
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: beige;
 }
 
-h1{
-    margin-left: 30px;
+/* Horni lista - header a nav */
+header {
+    background-color: blanchedalmond;
+    padding: 10px 20px;
 }
 
-a.menuitem {
-    text-align: right;
-
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/* Styl pro logo a text vedle sebe */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px; /* Aby logo nebylo obri */
+    margin-right: 10px;
+}
+
+/* Odkazy v menu */
+.nav_links {
+    display: flex;
+    list-style: none; /* Schova ty puntiky u seznamu */
+    margin: 0;
+}
+
+.nav_links li {
+    margin-left: 20px;
+}
+
+.nav_links a {
+    text-decoration: none; /* Schova podtrzeni odkazu */
+    color: black;
+    font-weight: bold;
+}
+
+/* Hlavni obsah */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+/* Obrazky - dulezite pro responzivitu */
 img {
-    margin-left: 500px;
-    height: 400px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Paticka */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 230px;
+    background-color: blanchedalmond;
 }
